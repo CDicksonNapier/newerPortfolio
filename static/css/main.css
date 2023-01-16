@@ -1,0 +1,40 @@
+:root {
+    --bg-color: #1c1c1c;
+    --sidebar-nav: #212729;
+    --font-color: #fff;
+    --siderbar-header: #263238;
+    --border-line: #455A64;
+    --sidenav-font-color: #CFD8DC;
+    --sidenav-font-hover: #14ebd4;
+    --alt-text-color: hsl(230, 100%, 95%);
+
+}
+
+@font-face {
+    font-family: "rubik";
+    src: url("../fonts/Rubik-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "rubikBold";
+    src: url("../fonts/Rubik-Medium.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-color);
+    font-family: 'rubik';
+}
+
+#sidebar{
+    background-color: var(--sidebar-nav);
+    position: fixed;
+    width: 8%;
+    height:100vh;
+    font-size: 1em;
+    
+}
