@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap  -->
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/main.css">
-    <script src="https://kit.fontawesome.com/824878f44d.js" crossorigin="anonymous"></script>
-    <title>Home Page</title>
+    <title>Portfolio</title>
 </head>
-
 <body>
-    <header>
-        <nav id="sidebar">
-            <!-- Top logo -->
-            <div id="logo">
-                <img src="logo.png" alt="Logo">
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">Chris Dickson</a>
+            <nav>
+                <svg class="close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 13.4L7.1 18.3C6.91667 18.4833 6.68333 18.575 6.4 18.575C6.11667 18.575 5.88333 18.4833 5.7 18.3C5.51667 18.1167 5.425 17.8833 5.425 17.6C5.425 17.3167 5.51667 17.0833 5.7 16.9L10.6 12L5.7 7.1C5.51667 6.91667 5.425 6.68334 5.425 6.4C5.425 6.11667 5.51667 5.88334 5.7 5.7C5.88333 5.51667 6.11667 5.425 6.4 5.425C6.68333 5.425 6.91667 5.51667 7.1 5.7L12 10.6L16.9 5.7C17.0833 5.51667 17.3167 5.425 17.6 5.425C17.8833 5.425 18.1167 5.51667 18.3 5.7C18.4833 5.88334 18.575 6.11667 18.575 6.4C18.575 6.68334 18.4833 6.91667 18.3 7.1L13.4 12L18.3 16.9C18.4833 17.0833 18.575 17.3167 18.575 17.6C18.575 17.8833 18.4833 18.1167 18.3 18.3C18.1167 18.4833 17.8833 18.575 17.6 18.575C17.3167 18.575 17.0833 18.4833 16.9 18.3L12 13.4Z" fill="black"/>
+                </svg>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <br>
+                    <li><a href="">Projects</a></li>
+                    <br>
+                    <li><a href="">Contact</a></li>
+                    <br>                    
+                </ul>
+            </nav>
+            <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
+            </svg> 
+        </header>
+        <section class="hero">
+            <h1 class="ml6">
+                <span class="text-wrapper">
+                    <span class="letters">                
+                Hi, I'm Chris!                
+                    </span>
+                </span>
+            </h1>
+            <p id="subhead">A designer and developer from Edinburgh. </p>
+            <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
+            </svg>                
+        </section>
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Web Design</p>
+                    <p class="description">Currently working on achieving my bachelors degree in Web Design and Development.</p>
+                </div>
+                <img src="static/images/weatherApp.png" alt="Smaill weather app made in JavaScript">
             </div>
-
-            <!-- Centered links -->
-            <ul id="menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <!-- Bottom social icons -->
-            <div id="social-icons">
-                <a href="https://github.com"><img src="github.png" alt="GitHub"></a>
-                <a href="https://linkedin.com"><img src="linkedin.png" alt="LinkedIn"></a>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Web Development </p>
+                    <p class="description">Utilising tools such as HTML/CSS, JavaScript as well as some other tools such as PHP/SQL, python, and bootstrap to help build workable and scalable projects. </p>
+                </div>
+                <img src="static/images/notflix.png" alt="A fake netflix website created as part of a project.">
             </div>
-        </nav>
-    </header>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Design</p>
+                    <p class="description">Using design tools such as PhotoShop, Illustrator and Figma, I can create custom designs and prototypes for all needs and purposes. </p>
+                </div>
+                <img src="" alt="">
+            </div>
+        </section>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="static/js/particles.js"></script>
+    <script src="static/js/main.js"></script>
     <script src="static/js/textAnimation.js"></script>
-    <!-- JS Bootstrap -->
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-      </script>
-</body>
 
+    
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+</body>
 </html>
